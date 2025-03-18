@@ -1203,7 +1203,7 @@ if st.button("Predict Ordering temperature"):
             predictions = model_temp.predict(prepare_data_for_prediction(df_temp))
             mag_status = st.session_state["mag_status"]
             if(mag_status==0):
-                st.markdown("<h1 style='font-size: 18px; color: red;'>No cordering temperature</h1>", unsafe_allow_html=True)
+                st.markdown("<h1 style='font-size: 18px; color: red;'>No ordering temperature</h1>", unsafe_allow_html=True)
                 #st.write("No cordering temperature")
             else:
                 mag_order_status = st.session_state["mag_order_status"]
