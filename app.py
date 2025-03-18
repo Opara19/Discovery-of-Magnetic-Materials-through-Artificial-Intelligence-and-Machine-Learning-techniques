@@ -486,7 +486,7 @@ if st.button("Predict Magnetism"):
                 st.markdown("<h1 style='font-size: 18px; color: red;'>Is a magnetic material</h1>", unsafe_allow_html=True)
                 # st.write("Is a magnetic material")
             else:
-                st.markdown("<h1 style='font-size: 18px; color: red;'>Not a magnetic material</h1>", unsafe_allow_html=True)
+                st.markdown("<h1 style='font-size: 18px; color: red;'>Not a magnetic material !!</h1>", unsafe_allow_html=True)
             
         except Exception as e:
             st.error(f"Error during prediction: {e}")
@@ -785,7 +785,7 @@ if st.button("Predict Magnetic Ordering"):
             # st.write("Prediction (Magnetic Ordering: FM/FiM/AFM):", predictions)
             mag_status = st.session_state["mag_status"]
             if(mag_status==0):
-                st.markdown("<h1 style='font-size: 18px; color: red;'>Non magnetic</h1>", unsafe_allow_html=True)
+                st.markdown("<h1 style='font-size: 18px; color: red;'>Non magnetic !!</h1>", unsafe_allow_html=True)
                 #st.write("Non magnetic")
             else:
                 if(predictions==1):
@@ -1203,7 +1203,7 @@ if st.button("Predict Ordering temperature"):
             predictions = model_temp.predict(prepare_data_for_prediction(df_temp))
             mag_status = st.session_state["mag_status"]
             if(mag_status==0):
-                st.markdown("<h1 style='font-size: 18px; color: red;'>No ordering temperature</h1>", unsafe_allow_html=True)
+                st.markdown("<h1 style='font-size: 18px; color: red;'>No ordering temperature !!</h1>", unsafe_allow_html=True)
                 #st.write("No cordering temperature")
             else:
                 mag_order_status = st.session_state["mag_order_status"]
