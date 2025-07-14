@@ -40,7 +40,9 @@
 
 
 
+## Web Application 
 
+The streamlit based web application can be accessed through this [MaGpRoPs](https://magprops.streamlit.app/)
 
 
 
